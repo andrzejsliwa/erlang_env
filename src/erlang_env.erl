@@ -30,8 +30,7 @@ load_config(Path, Name) when is_list(Name) ->
 load_config(FullPath) ->
     case filelib:is_regular(FullPath) of
         true  ->
-            {ok, [Configuration]} = yaml:load_config(FullPath),
-            {ok, Configuration};
+            file:consult(FullPath),
         false ->
             {error, {missing_file, FullPath}}
     end.
