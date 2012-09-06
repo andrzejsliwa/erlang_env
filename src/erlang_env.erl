@@ -24,7 +24,7 @@ load_default_config(Name) ->
 load_config(Path, Name) when is_atom(Name) ->
     load_config(Path, atom_to_list(Name));
 load_config(Path, Name) when is_list(Name) ->
-    FileName = Name ++ ".yml",
+    FileName = Name ++ ".config",
     load_config(filename:join([Path, FileName])).
 
 load_config(FullPath) ->
