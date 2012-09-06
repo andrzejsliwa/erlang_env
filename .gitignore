@@ -1,0 +1,14 @@
+# ignore dialyzer *.plt files
+*_dialyzer.plt
+
+# ignore macosx specific meta file
+.DS_Store
+
+# ignore rebar specific files and folders
+.eunit
+ebin
+deps
+log
+erl_crash.dump
+
+.tags*
