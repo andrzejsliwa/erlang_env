@@ -1,0 +1,11 @@
+handle application config scoped by ERLANG_ENV variable (default development)
+
+example config:
+
+  {application, your_application,
+   [
+    ...
+    {env, [
+           {development, [{key, "value"}]}
+          ]}
+   ]}.

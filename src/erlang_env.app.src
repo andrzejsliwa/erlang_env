@@ -1,0 +1,13 @@
+{application, erlang_env,
+ [
+  {description, ""},
+  {vsn, {cmd, "echo `cat ../VERSION`"}},
+  {registered, []},
+  {applications, [
+                  kernel,
+                  stdlib
+                 ]},
+  {env, [
+         {development, [{key, "value"}]}
+        ]}
+ ]}.
