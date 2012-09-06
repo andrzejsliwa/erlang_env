@@ -3,7 +3,7 @@
 all: deps compile
 
 compile:
-	./rebar compile escriptize
+	./rebar compile
 
 deps:
 	./rebar get-deps
