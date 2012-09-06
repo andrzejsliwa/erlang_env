@@ -30,7 +30,7 @@ load_config(Path, Name) when is_list(Name) ->
 load_config(FullPath) ->
     case filelib:is_regular(FullPath) of
         true  ->
-            file:consult(FullPath),
+            file:consult(FullPath);
         false ->
             {error, {missing_file, FullPath}}
     end.
